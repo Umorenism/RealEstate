@@ -19,7 +19,7 @@ export const Signup = () => {
   };
   return (
     <div className="absolute top-0 left-0 h-screen w-screen bg-img flex justify-center items-center">
-      <div className="w-[27.5vw] h-[67.5vh] rounded-lg  justify-center flex flex-col bg-[#fff]">
+      <div className="md:w-[27.5vw] w-[80.7vw] h-[67.5vh] rounded-lg  justify-center flex flex-col bg-[#fff]">
         <h2 className="text-[#171097] text-center m-[2.5rem 0] text-3xl font-bold py-4">
           Sign up
         </h2>
