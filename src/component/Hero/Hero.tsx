@@ -51,9 +51,11 @@ export const Hero = () => {
             <option value="3">Annang</option>
             <option value="4">Ini</option>
           </select>
-          <AiOutlineSearch className="p-1 w-[40px] h-[40px] rounded-lg " />
+          <button>
+            {" "}
+            <AiOutlineSearch className="p-1 w-[40px] h-[40px] rounded-lg " />
+          </button>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

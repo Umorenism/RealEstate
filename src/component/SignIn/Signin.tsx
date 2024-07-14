@@ -25,25 +25,6 @@ export const Signin = () => {
         </h2>
 
         <form className="flex flex-col items-center gap-[42px]">
-          {/* <label
-            htmlFor="photo"
-            className="flex bg-gray-600 items-center h-[50px] rounded-full flex-col justify-center w-[50px] cursor-pointer gap-[0.75rem]"
-          >
-            <AiOutlineFileImage />
-          </label>
-          <input
-            id="photo"
-            type="file"
-            style={{ display: "none" }}
-            onChange={(e: any) => setPhoto(e.target.files[0])}
-          /> */}
-          <input
-            className="w-[80%] focus:border-green-300 focus:border-2 rounded-xl py-2 outline-none border p-4 "
-            type="text"
-            name="username"
-            placeholder="Username"
-            onChange={handleState}
-          />
           <input
             className="w-[80%] rounded-xl focus:border-green-300 focus:border-2  py-2 p-4 outline-none border "
             type="email"
@@ -63,7 +44,7 @@ export const Signin = () => {
             Login
           </button>
           <p>
-            Already have an account?{" "}
+            Dont't have an account?{" "}
             <Link to="/signin" className="text-[#171097]">
               sign up
             </Link>
