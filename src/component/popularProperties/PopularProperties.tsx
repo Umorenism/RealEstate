@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../public/b.jpg";
-import img2 from "../../../public/b.jpg";
-import img3 from "../../../public/b.jpg";
+import img1 from "../../../src/asset/house3.png";
+import img2 from "../../../src/asset/house4.png";
+import img3 from "../../../src/asset/house5.png";
 
 export const PopularProperties = () => {
   const [numberOfProperties, setNumberOfProperties] = useState({});

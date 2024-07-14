@@ -4,7 +4,7 @@
 
 
 .bg-img{
-    background-image: url('../public/w.png');
+    background-image: url('../src/asset/house2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

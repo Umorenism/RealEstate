@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { FaBed, FaSquareFull } from "react-icons/fa";
 
-import pic from "../../../public/b.jpg";
+import pic from "../../../src/asset/house.png";
 
 const featuredProperties = [
   {
