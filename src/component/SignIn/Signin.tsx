@@ -1,22 +1,21 @@
-import React, { useState } from "react";
-import { AiOutlineFileImage } from "react-icons/ai";
-import { useDispatch } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import { Link, useNavigate } from "react-router-dom";
 
 export const Signin = () => {
-  const [state, setState] = useState({});
-  const [photo, setPhoto] = useState("");
+  // const [state, setState] = useState({});
+  // const [photo, setPhoto] = useState("");
 
-  // const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // // const dispatch = useDispatch();
+  // const navigate = useNavigate();
 
-  const handleState = (e: any) => {
-    setState((prev) => {
-      return { ...prev, [e.target.name]: e.target.value };
-    });
+  // const handleState = (e: any) => {
+  //   setState((prev) => {
+  //     return { ...prev, [e.target.name]: e.target.value };
+  //   });
 
-    const handleSubmit = () => {};
-  };
+  //   const handleSubmit = () => {};
+  // };
   return (
     <div className="absolute top-0 left-0 h-screen w-screen bg-img flex justify-center items-center">
       <div className="md:w-[27.5vw] w-[80.7vw] h-[67.5vh] rounded-lg  justify-center flex flex-col bg-[#fff]">
@@ -30,7 +29,7 @@ export const Signin = () => {
             type="email"
             name="email"
             placeholder="Email.."
-            onChange={handleState}
+            // onChange={handleState}
           />
 
           <input
@@ -38,7 +37,7 @@ export const Signin = () => {
             type="password"
             name="password"
             placeholder="password.."
-            onChange={handleState}
+            // onChange={handleState}
           />
           <button className="bg-[#171097] text-white rounded-md p-2">
             Login

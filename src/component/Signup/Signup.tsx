@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { AiOutlineFileImage } from "react-icons/ai";
-import { useDispatch } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import { Link, useNavigate } from "react-router-dom";
 
 export const Signup = () => {
-  const [state, setState] = useState({});
-  const [photo, setPhoto] = useState("");
+  // const [state, setState] = useState({});
+  // const [photo, setPhoto] = useState("");
 
-  // const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // // const dispatch = useDispatch();
+  // const navigate = useNavigate();
 
-  const handleState = (e: any) => {
-    setState((prev) => {
-      return { ...prev, [e.target.name]: e.target.value };
-    });
+  // const handleState = (e: any) => {
+  //   setState((prev) => {
+  //     return { ...prev, [e.target.name]: e.target.value };
+  //   });
 
-    const handleSubmit = () => {};
-  };
+  //   const handleSubmit = () => {
+  //     return null
+  //   };
+  // };
   return (
     <div className="absolute top-0 left-0 h-screen w-screen bg-img flex justify-center items-center">
       <div className="md:w-[27.5vw] w-[80.7vw] h-[67.5vh] rounded-lg  justify-center flex flex-col bg-[#fff]">
@@ -35,21 +38,21 @@ export const Signup = () => {
             id="photo"
             type="file"
             style={{ display: "none" }}
-            onChange={(e: any) => setPhoto(e.target.files[0])}
+            // onChange={(e: any) => setPhoto(e.target.files[0])}
           />
           <input
             className="w-[80%] focus:border-green-300 focus:border-2 rounded-xl py-2 outline-none border p-4 "
             type="text"
             name="username"
             placeholder="Username"
-            onChange={handleState}
+            // onChange={handleState}
           />
           <input
             className="w-[80%] rounded-xl focus:border-green-300 focus:border-2  py-2 p-4 outline-none border "
             type="email"
             name="email"
             placeholder="Email.."
-            onChange={handleState}
+            // onChange={handleState}
           />
 
           <input
@@ -57,7 +60,7 @@ export const Signup = () => {
             type="password"
             name="password"
             placeholder="password.."
-            onChange={handleState}
+            // onChange={handleState}
           />
           <button className="bg-[#171097] text-white rounded-md p-2">
             Register
