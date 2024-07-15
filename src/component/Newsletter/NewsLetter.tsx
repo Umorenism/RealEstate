@@ -1,5 +1,5 @@
-import React from "react";
 import { FiSend } from "react-icons/fi";
+
 export const NewsLetter = () => {
   return (
     <div className="min-h-full  w-full mt-24 p-4">

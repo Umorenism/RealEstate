@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import img1 from "../../../src/asset/house3.png";
 import img2 from "../../../src/asset/house4.png";
 import img3 from "../../../src/asset/house5.png";
 
 export const PopularProperties = () => {
-  const [numberOfProperties, setNumberOfProperties] = useState({});
+  // const [numberOfProperties, setNumberOfProperties] = useState({});
 
-  useEffect(() => {
-    const fetchNumberOfProperties = async () => {
-      try {
-        // const data = await request('/property/find/types' 'GET') coming from utli
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchNumberOfProperties();
-  }, []);
+  // useEffect(() => {
+  //   const fetchNumberOfProperties = async () => {
+  //     try {
+  //       // const data = await request('/property/find/types' 'GET') coming from utli
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   fetchNumberOfProperties();
+  // }, []);
   return (
     <div className="min-h-screen max-w-[100%] w-full mt-5">
       <div className="max-w-[1100px] p-4 min-h-[400px] m-auto flex  flex-col">

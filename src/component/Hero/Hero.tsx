@@ -1,13 +1,11 @@
-import React from "react";
-import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export const Hero = () => {
-  const [type, setType] = useState(0);
-  const [continent, setContinent] = useState(0);
-  const [priceRange, setPriceRange] = useState(0);
+  // const [type, setType] = useState(0);
+  // const [continent, setContinent] = useState(0);
+  // const [priceRange, setPriceRange] = useState(0);
 
-  const handleChange = () => {};
+  // const handleChange = () => {};
 
   return (
     <div className="w-full h-screen bg-img p-4">
@@ -21,7 +19,7 @@ export const Hero = () => {
         </p>
         <div className="md:w-[50%] border-1 border-orange-500  p-4 rounded-xl flex justify-between items-center bg-white py-2  flex-col m-2 md:flex-row">
           <select
-            onChange={(e: any) => setType(e.target.value)}
+            // onChange={(e: any) => setType(e.target.value)}
             className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select types</option>
@@ -30,7 +28,7 @@ export const Hero = () => {
             <option value="villiage">Village</option>
           </select>
           <select
-            onChange={(e: any) => setPriceRange(e.target.value)}
+            // onChange={(e: any) => setPriceRange(e.target.value)}
             className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select price Range</option>
@@ -41,7 +39,7 @@ export const Hero = () => {
             <option value="4">400,000-500,000</option>
           </select>
           <select
-            onChange={(e: any) => setContinent(e.target.value)}
+            // onChange={(e: any) => setContinent(e.target.value)}
             className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select Continents</option>
