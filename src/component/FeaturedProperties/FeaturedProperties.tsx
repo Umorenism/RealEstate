@@ -101,7 +101,7 @@ export const FeaturedProperties = () => {
                   </div>
                   <div className="flex gap-4">
                     <span className="flex gap-2 items-center justify-center">
-                      {item.bed} <FaBed ize={20} className="text-blue-500" />
+                      {item.bed} <FaBed size={20} className="text-blue-500" />
                     </span>
                     <span className="flex justify-center items-center gap-2">
                       {item.sqm}{" "}
