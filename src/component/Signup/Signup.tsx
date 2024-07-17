@@ -65,9 +65,9 @@ export const Signup = () => {
           <button className="bg-[#171097] text-white rounded-md p-2">
             Register
           </button>
-          <p>
+          <p className="mb-4">
             Already have an account?{" "}
-            <Link to="/signin" className="text-[#171097]">
+            <Link to="/signin" className="text-[#171097] ">
               Sign in
             </Link>
           </p>

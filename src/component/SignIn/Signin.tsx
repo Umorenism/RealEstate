@@ -42,7 +42,7 @@ export const Signin = () => {
           <button className="bg-[#171097] text-white rounded-md p-2">
             Login
           </button>
-          <p>
+          <p className="m-2">
             Dont't have an account?{" "}
             <Link to="/signin" className="text-[#171097]">
               sign up

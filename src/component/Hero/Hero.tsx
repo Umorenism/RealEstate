@@ -23,8 +23,8 @@ export const Hero = () => {
             className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select types</option>
-            <option value="beach">Beach</option>
-            <option value="mountain">Mountain</option>
+            <option value="beach">Town</option>
+            <option value="mountain">City</option>
             <option value="villiage">Village</option>
           </select>
           <select

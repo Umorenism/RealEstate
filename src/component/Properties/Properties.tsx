@@ -19,8 +19,8 @@ export const Properties = () => {
             className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select types</option>
-            <option value="beach">Beach</option>
-            <option value="mountain">Mountain</option>
+            <option value="beach">Town</option>
+            <option value="mountain">City</option>
             <option value="villiage">Village</option>
           </select>
           <select
@@ -55,26 +55,17 @@ export const Properties = () => {
           <h2 className="text-2xl font-bold">Properties you may like</h2>
         </div>
         <div className="mt-6 gap-4 grid md:grid-cols-3 grid-col w-full justify-center">
-          <div className="bg-gray-700 w-[300px] min-h-[400px]">
-            <img
-              alt="alt"
-              src={pic}
-              className="max-h-[300px] w-full object-cover"
-            />
+          <div className="bg-gray-700 w-full p-4 py-10">
+            <img alt="alt" src={pic} className=" w-full object-cover h-full" />
+            <p>hello</p>
           </div>
-          <div className="bg-gray-700 w-[300px] min-h-[400px]">
-            <img
-              alt="alt"
-              src={pic2}
-              className="max-h-[300px] w-full object-cover"
-            />
+          <div className="bg-gray-700 w-full p-4 py-10">
+            <img alt="alt" src={pic2} className="full w-full object-cover" />
+            <p>hello</p>
           </div>
-          <div className="bg-gray-700 w-[300px] min-h-[400px]">
-            <img
-              alt="alt"
-              src={pic3}
-              className="max-h-[300px] w-full object-cover"
-            />
+          <div className="bg-gray-700 w-full p-4 full py-10">
+            <img alt="alt" src={pic3} className="h-full w-full object-cover" />
+            <p>hello</p>
           </div>
         </div>
       </div>
