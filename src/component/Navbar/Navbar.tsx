@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsPhoneLandscape } from "react-icons/bs";
+
 import { Link } from "react-router-dom";
 import { Contact } from "../Contact";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -24,16 +24,19 @@ export const Navbar = () => {
       <div className="flex justify-between m-auto max-w-[1100px] items-center h-full">
         <Link
           to="/"
-          className="flex gap-2 items-center text-[#2512d1] text-2xl"
+          className="flex gap-1 items-center text-[#2512d1] text-2xl"
         >
-          LANDS <BsPhoneLandscape />
+          LANDS &{" "}
+          <span>
+            {" "}
+            <Link
+              to="/fashion"
+              className="items-center text-[#2512d1] text-2xl"
+            >
+              FASHION
+            </Link>
+          </span>
         </Link>
-        {/* <Link
-          to="/fashion"
-          className="flex gap-2 items-center text-[#2512d1] text-2xl"
-        >
-          FASHIONSTORE
-        </Link> */}
 
         <div className="hidden md:flex">
           <ul className="flex gap-10  text-xl text-[#222] transition duration-200 cursor-pointer">
@@ -56,7 +59,7 @@ export const Navbar = () => {
           <div className="hidden md:flex">
             <Link
               to="/signup"
-              className="bg-[#2500ac] p-2 rounded-lg text-white text-center w-[80px]"
+              className="bg-[#2500ac] p-2 rounded-lg text-white text-center px-4"
             >
               Sign up
             </Link>

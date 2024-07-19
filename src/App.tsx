@@ -9,6 +9,9 @@ import { Signup } from "./component/Signup/Signup";
 import { Signin } from "./component/SignIn/Signin";
 import { Properties } from "./component/Properties/Properties";
 import { PropertyDetail } from "./component/PropertyDetail/PropertyDetail";
+import { StoreBanner } from "./component/fashionHero.tsx/StoreBanner";
+import { StoreNav } from "./component/storenav/StoreNav";
+import { StoreCollection } from "./component/storeCollection/StoreCollection";
 
 function App() {
   return (
@@ -23,6 +26,18 @@ function App() {
               <PopularProperties />
               <FeaturedProperties />
               <NewsLetter />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/fashion"
+          element={
+            <>
+              <Navbar />
+              <StoreNav />
+              <StoreBanner />
+              <StoreCollection />
               <Footer />
             </>
           }
