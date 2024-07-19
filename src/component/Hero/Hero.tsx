@@ -11,10 +11,10 @@ export const Hero = () => {
     <div className="w-full h-screen bg-img p-4">
       <div className="max-w-full flex-1 m-auto h-full flex flex-col items-center justify-center  w-full ">
         {/* <div className=" border-2"> */}
-        <h1 className="text-[#efefef] font-bold mb-2 text-3xl">
+        <h1 className="text-black font-bold mb-2 text-3xl">
           Let find your dream place right now
         </h1>
-        <p className="text-[#efefef] font-bold mb-2">
+        <p className="text-black font-bold mb-2">
           Search the best selectioon of luxury real estate..
         </p>
         <div className="md:w-[50%] border-1 border-orange-500  p-4 rounded-xl flex justify-between items-center bg-white py-2  flex-col m-2 md:flex-row">
