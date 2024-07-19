@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsHouseDoor } from "react-icons/bs";
+import { BsPhoneLandscape } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Contact } from "../Contact";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -26,7 +26,7 @@ export const Navbar = () => {
           to="/"
           className="flex gap-2 items-center text-[#2512d1] text-2xl"
         >
-          LANDS& <BsHouseDoor />
+          LANDS <BsPhoneLandscape />
         </Link>
         {/* <Link
           to="/fashion"
