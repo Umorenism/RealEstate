@@ -3,7 +3,6 @@ import { BsHouseDoor } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Contact } from "../Contact";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { FaAddressBook } from "react-icons/fa";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -12,9 +11,7 @@ export const Navbar = () => {
   const handleChange = () => {
     setMenu(!menu);
   };
-  const closeMenu = () => {
-    setMenu(false);
-  };
+
   const openForm = () => {
     setShowForm(true);
     setMenu(false);
@@ -23,14 +20,21 @@ export const Navbar = () => {
     setShowForm(false);
   };
   return (
-    <div className=" sticky  top-0  h-[60px] w-full z-10 bg-[#ffff] border-b-2 border-gray-300 ">
+    <div className=" sticky top-0 h-[60px] w-full z-10 bg-[#ffff] border-b-2 border-gray-300 ">
       <div className="flex justify-between m-auto max-w-[1100px] items-center h-full">
         <Link
           to="/"
           className="flex gap-2 items-center text-[#2512d1] text-2xl"
         >
-          LANDS&PROPERTIES <BsHouseDoor />
+          LANDS& <BsHouseDoor />
         </Link>
+        {/* <Link
+          to="/fashion"
+          className="flex gap-2 items-center text-[#2512d1] text-2xl"
+        >
+          FASHIONSTORE
+        </Link> */}
+
         <div className="hidden md:flex">
           <ul className="flex gap-10  text-xl text-[#222] transition duration-200 cursor-pointer">
             <Link to="/">
@@ -62,7 +66,7 @@ export const Navbar = () => {
 
             <button
               onClick={openForm}
-              className="bg-[#2500ac] p-2 rounded-lg text-white font-bold"
+              className="bg-[#373346] p-2 rounded-lg text-white font-bold"
             >
               Book us
             </button>
@@ -95,32 +99,27 @@ export const Navbar = () => {
             to="/"
             className="cursor-pointer hover:text-hoverColor transition-all duration-300"
           >
-            About us
+            About
           </Link>
           <Link
             to="/"
             className="cursor-pointer hover:text-hoverColor transition-all duration-300"
           >
-            Service
+            Featured
           </Link>
+
           <Link
             to="/"
             className="cursor-pointer hover:text-hoverColor transition-all duration-300"
           >
-            Doctors
-          </Link>
-          <Link
-            to="/"
-            className="cursor-pointer hover:text-hoverColor transition-all duration-300"
-          >
-            Blogs
+            Contact
           </Link>
           <div className=" lg:hidden">
             <button
               onClick={openForm}
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition ease-out duration-300"
+              className="bg-[#13be41] text-white px-4 py-2 rounded-md hover:bg-hoverColor transition ease-out duration-300"
             >
-              Contact Us
+              Send message
             </button>
           </div>
         </div>

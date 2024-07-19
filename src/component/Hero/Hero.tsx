@@ -29,9 +29,11 @@ export const Hero = () => {
           </select>
           <select
             // onChange={(e: any) => setPriceRange(e.target.value)}
-            className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
+            className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full  p-2 text-white m-2"
           >
-            <option disabled>Select price Range</option>
+            <option disabled className="pr-2">
+              Select price Range
+            </option>
             <option value="0">0-100,000</option>
             <option value="1">100,000-200,000</option>
             <option value="2">200,000-300,000</option>

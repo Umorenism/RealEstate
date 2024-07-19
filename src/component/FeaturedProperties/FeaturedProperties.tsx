@@ -87,8 +87,8 @@ export const FeaturedProperties = () => {
         <div className="w-full mt-[3rem] flex flex-col md:flex-row gap-5 items-center justify-center  border-red-400">
           {featuredProperties.map((item, index) => {
             return (
-              <div key={index} className=" p-4 shadow-2xl rounded-xl">
-                <Link to="/propertyDetail">
+              <div key={index} className=" p-4 shadow-2xl  rounded-xl">
+                <Link to="/propertyDetail/:id">
                   <img
                     src={pic}
                     className="max-h-[300px] w-full object-cover"

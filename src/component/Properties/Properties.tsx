@@ -1,8 +1,6 @@
 // import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import pic from "../../asset/house3.png";
-import pic2 from "../../asset/house4.png";
-import pic3 from "../../asset/house2.png";
 
 export const Properties = () => {
   // const [type, setType] = useState(0);
@@ -55,17 +53,59 @@ export const Properties = () => {
           <h2 className="text-2xl font-bold">Properties you may like</h2>
         </div>
         <div className="mt-6 gap-4 grid md:grid-cols-3 grid-col w-full justify-center">
-          <div className="bg-gray-700 w-full p-4 py-10">
-            <img alt="alt" src={pic} className=" w-full object-cover h-full" />
-            <p>hello</p>
+          <div className="shadow-xl  w-full min-h-[400px] p-4 py-10">
+            <img
+              alt="alt"
+              src={pic}
+              className=" w-full rounded-t-lg max-h-[500px] object-cover"
+            />
+            <div className="flex justify-between flex-col items-center">
+              <h1 className="text-2xl font-bold py-2">Village Property</h1>
+              <p className="text-sm text-slate-500">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores commodi blanditiis cumque, nihil facere soluta ex
+                corrupti quidem dolorum fugit tenetur veritatis, magnam
+              </p>
+            </div>
+            <button className="bg-blue-600 rounded-md text-white py-2 px-4 mt-3">
+              View
+            </button>
           </div>
-          <div className="bg-gray-700 w-full p-4 py-10">
-            <img alt="alt" src={pic2} className="full w-full object-cover" />
-            <p>hello</p>
+          <div className="shadow-xl  w-full min-h-[400px] p-4 py-10">
+            <img
+              alt="alt"
+              src={pic}
+              className=" w-full rounded-t-lg max-h-[500px] object-cover"
+            />
+            <div className="flex justify-between flex-col items-center">
+              <h1 className="text-2xl font-bold py-2">City Property</h1>
+              <p className="text-sm text-slate-500">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores commodi blanditiis cumque, nihil facere soluta ex
+                corrupti quidem dolorum fugit tenetur veritatis, magnam
+              </p>
+            </div>
+            <button className="bg-blue-600 rounded-md text-white py-2 px-4 mt-3">
+              View
+            </button>
           </div>
-          <div className="bg-gray-700 w-full p-4 full py-10">
-            <img alt="alt" src={pic3} className="h-full w-full object-cover" />
-            <p>hello</p>
+          <div className="shadow-xl  w-full min-h-[400px] p-4 py-10">
+            <img
+              alt="alt"
+              src={pic}
+              className=" w-full rounded-t-lg max-h-[500px] object-cover"
+            />
+            <div className="flex justify-between flex-col items-center">
+              <h1 className="text-2xl font-bold py-2">Town Property</h1>
+              <p className="text-sm text-slate-500">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores commodi blanditiis cumque, nihil facere soluta ex
+                corrupti quidem dolorum fugit tenetur veritatis, magnam
+              </p>
+            </div>
+            <button className="bg-blue-600 rounded-md text-white py-2 px-4 mt-3">
+              View
+            </button>
           </div>
         </div>
       </div>

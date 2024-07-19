@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="max-h-[500px] w-full mt-[5rem] bg-slate-400 rounded-t-2xl p-4">
+    <footer className="max-h-[500px] w-full mt-[5rem] text-blue-500 rounded-t-2xl p-4 ">
       <div className="w-full text-center flex-col md:flex-row h-full mx-auto md:flex md:justify-evenly  md:items-center p-4  ">
         <div className="flex flex-col text-start max-w-[20rem]  m-2">
           <h2 className="text-2xl font-bold">About the App</h2>
