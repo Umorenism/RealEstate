@@ -11,6 +11,7 @@ import { PropertyDetail } from "./component/PropertyDetail/PropertyDetail";
 import { StoreBanner } from "./component/fashionHero.tsx/StoreBanner";
 import { StoreNav } from "./component/storenav/StoreNav";
 import { StoreCollection } from "./component/storeCollection/StoreCollection";
+import { FashionSlide } from "./component/FashionSlide";
 
 function App() {
   return (
@@ -25,6 +26,47 @@ function App() {
               <PopularProperties />
               <FeaturedProperties />
               <NewsLetter />
+              <FashionSlide />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/popularproperty"
+          element={
+            <>
+              <Navbar />
+              <PopularProperties />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/featured"
+          element={
+            <>
+              <Navbar />
+              <FeaturedProperties />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/newsletter"
+          element={
+            <>
+              <Navbar />
+              <NewsLetter />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/fashionslide"
+          element={
+            <>
+              <Navbar />
+              <FashionSlide />
               <Footer />
             </>
           }

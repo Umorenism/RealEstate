@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Contact } from "../Contact";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import logo from "../../asset/HIGHLIFE LOGO full.jpg";
+import logo from "../../asset/IMG-20240806-WA0007.jpg";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -39,14 +39,14 @@ export const Navbar = () => {
             <Link to="/">
               <li className="hover:text-blue-500">Home</li>
             </Link>
-            <Link to="/PopularProperties">
-              <li className="hover:text-blue-500">About</li>
+            <Link to="/popularproperty">
+              <li className="hover:text-blue-500">Popular Properties</li>
             </Link>
-            <Link to="/FeaturedProperties">
-              <li className="hover:text-blue-500">Features</li>
+            <Link to="/featured">
+              <li className="hover:text-blue-500">Fatured</li>
             </Link>
-            <Link to="/NewsLetter">
-              <li className="hover:text-blue-500">Contact</li>
+            <Link to="/newsletter">
+              <li className="hover:text-blue-500">Newletter</li>
             </Link>
           </ul>
         </div>
@@ -76,32 +76,22 @@ export const Navbar = () => {
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
-          } md:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-xl md:text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+          } md:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-xl  md:text-2xl text-center pt-8 pb-4 gap-8 w-full h-screen transition-transform duration-300`}
         >
-          <Link
-            to="/"
-            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
-          >
-            Home
-          </Link>
-          <Link
-            to="/PopularProperties"
-            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
-          >
-            About
-          </Link>
-          <Link
-            to="/FeaturedProperties"
-            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
-          >
-            Features
-          </Link>
-          <Link
-            to="/NewsLetter"
-            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
-          >
-            Contact
-          </Link>
+          <ul className=" mt-10">
+            <Link to="/">
+              <li className="hover:text-blue-500 py-4">Home</li>
+            </Link>
+            <Link to="/popularproperty">
+              <li className="hover:text-blue-500 py-4">Popular Properties</li>
+            </Link>
+            <Link to="/featured">
+              <li className="hover:text-blue-500 py-4">Fatured</li>
+            </Link>
+            <Link to="/newsletter">
+              <li className="hover:text-blue-500 py-4">Newletter</li>
+            </Link>
+          </ul>
           <div className="md:hidden">
             <button
               onClick={openForm}

@@ -3,12 +3,12 @@ import { AiOutlineSearch } from "react-icons/ai";
 export const Hero = () => {
   return (
     <div className="w-full h-screen bg-img p-4 relative">
-      <div className="absolute inset-0 bg-black opacity-50 backdrop-blur-md"></div>
-      <div className="relative z-10 max-w-full flex-1 m-auto h-full flex flex-col items-center justify-center w-full">
-        <h1 className="text-white font-bold mb-4 md:text-3xl  ">
+      <div className="absolute inset-0 bg-black opacity-10 backdrop-blur-md"></div>
+      <div className=" max-w-full flex-1 m-auto h-full flex flex-col items-center justify-center w-full">
+        <h1 className="text-white font-bold text-center text-sm  md:mb-4 md:text-4xl  ">
           Let find your dream place right now
         </h1>
-        <p className="text-white text-sm font-semibold mb-2">
+        <p className="text-white text-sm text-center font-semibold mb-2">
           Search the best selection of luxury real estate..
         </p>
         <div className="md:w-[50%] border-1 border-orange-500 p-4 rounded-xl flex justify-between items-center bg-white py-2 flex-col m-2 md:flex-row">
