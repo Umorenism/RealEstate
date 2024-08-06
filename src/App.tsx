@@ -5,8 +5,7 @@ import { Footer } from "./component/Footer/Footer";
 import { PopularProperties } from "./component/popularProperties/PopularProperties";
 import { FeaturedProperties } from "./component/FeaturedProperties/FeaturedProperties";
 import { NewsLetter } from "./component/Newsletter/NewsLetter";
-import { Signup } from "./component/Signup/Signup";
-import { Signin } from "./component/SignIn/Signin";
+
 import { Properties } from "./component/Properties/Properties";
 import { PropertyDetail } from "./component/PropertyDetail/PropertyDetail";
 import { StoreBanner } from "./component/fashionHero.tsx/StoreBanner";
@@ -63,8 +62,8 @@ function App() {
             </>
           }
         />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/signin" element={<Signin />} />
+        {/* <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} /> */}
       </Routes>
     </>
   );
