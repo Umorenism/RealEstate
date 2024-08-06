@@ -53,18 +53,6 @@ export const Navbar = () => {
 
         <div className="gap-4 flex">
           <div className="hidden md:flex">
-            {/* <Link
-              to="/signup"
-              className="bg-blue-700 p-2 rounded-lg text-white text-center px-4 hover:bg-blue-600"
-            >
-              Sign up
-            </Link>
-            <Link
-              to="/signin"
-              className="p-2 text-center w-20 md:w-24 lg:w-28 hover:text-blue-600"
-            >
-              Sign in
-            </Link> */}
             <button
               onClick={openForm}
               className="bg-gray-800 p-2 rounded-lg text-white font-bold hover:bg-gray-700"
