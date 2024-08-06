@@ -48,6 +48,11 @@ export const Navbar = () => {
             <Link to="/newsletter">
               <li className="hover:text-blue-500">Newletter</li>
             </Link>
+            <Link to="/fashion">
+              <li className="hover:text-blue-500 underline text-orange-500">
+                Fashion
+              </li>
+            </Link>
           </ul>
         </div>
 
