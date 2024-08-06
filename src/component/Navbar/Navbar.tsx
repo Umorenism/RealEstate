@@ -1,8 +1,8 @@
 import { useState } from "react";
-
 import { Link } from "react-router-dom";
 import { Contact } from "../Contact";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import logo from "../../asset/HIGHLIFE LOGO full.jpg";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -19,66 +19,64 @@ export const Navbar = () => {
   const closeForm = () => {
     setShowForm(false);
   };
+
   return (
-    <div className=" sticky top-0 h-[60px] w-full z-10 bg-[#ffff] border-b-2 border-gray-300 ">
-      <div className="flex justify-between m-auto max-w-[1100px] items-center h-full">
+    <div className="sticky top-0 w-full z-10 bg-white border-b-2 border-gray-300">
+      <div className="flex justify-between m-auto max-w-[1100px] items-center h-16 md:h-20 lg:h-24">
         <Link
           to="/"
-          className="flex gap-1 items-center text-[#2512d1] text-2xl"
+          className="flex gap-1 items-center text-blue-600 text-xl md:text-2xl lg:text-3xl"
         >
-          LANDS &{" "}
-          <span>
-            {" "}
-            <Link
-              to="/fashion"
-              className="items-center text-[#2512d1] text-2xl"
-            >
-              FASHION
-            </Link>
-          </span>
+          <img
+            src={logo}
+            alt=""
+            className="h-12 md:w-20 md:h-20 w-12 bg-black ml-1"
+          />
         </Link>
 
         <div className="hidden md:flex">
-          <ul className="flex gap-10  text-xl text-[#222] transition duration-200 cursor-pointer">
+          <ul className="flex gap-6 md:gap-10 lg:gap-14 text-lg md:text-xl lg:text-2xl text-gray-800 transition duration-200 cursor-pointer">
             <Link to="/">
-              <li>Home</li>
+              <li className="hover:text-blue-500">Home</li>
             </Link>
             <Link to="/PopularProperties">
-              <li>About</li>
+              <li className="hover:text-blue-500">About</li>
             </Link>
-
             <Link to="/FeaturedProperties">
-              <ul>Features</ul>
+              <li className="hover:text-blue-500">Features</li>
             </Link>
             <Link to="/NewsLetter">
-              <li>Contact</li>
+              <li className="hover:text-blue-500">Contact</li>
             </Link>
           </ul>
         </div>
-        <div className="gap-4 flex ">
+
+        <div className="gap-4 flex">
           <div className="hidden md:flex">
-            <Link
+            {/* <Link
               to="/signup"
-              className="bg-[#2500ac] p-2 rounded-lg text-white text-center px-4"
+              className="bg-blue-700 p-2 rounded-lg text-white text-center px-4 hover:bg-blue-600"
             >
               Sign up
             </Link>
-            <Link to="/signin" className=" p-2 text-center w-[80px]">
+            <Link
+              to="/signin"
+              className="p-2 text-center w-20 md:w-24 lg:w-28 hover:text-blue-600"
+            >
               Sign in
-            </Link>
-
+            </Link> */}
             <button
               onClick={openForm}
-              className="bg-[#373346] p-2 rounded-lg text-white font-bold"
+              className="bg-gray-800 p-2 rounded-lg text-white font-bold hover:bg-gray-700"
             >
               Book us
             </button>
           </div>
 
           {/* {open form} */}
-
           {showForm && <Contact closeForm={closeForm} />}
-          <div className="lg:hidden flex items-center p-2">
+
+          <div className="md:hidden flex items-center p-2">
             {menu ? (
               <AiOutlineClose size={25} onClick={handleChange} />
             ) : (
@@ -89,38 +87,37 @@ export const Navbar = () => {
 
         <div
           className={`${
-            menu ? "transparent" : "-translate-x-full"
-          } lg:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+            menu ? "translate-x-0" : "-translate-x-full"
+          } md:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-xl md:text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <Link
             to="/"
-            className="cursor-pointer hover:text-hoverColor transition-all duration-300"
+            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
           >
             Home
           </Link>
           <Link
-            to="/"
-            className="cursor-pointer hover:text-hoverColor transition-all duration-300"
+            to="/PopularProperties"
+            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
           >
             About
           </Link>
           <Link
-            to="/"
-            className="cursor-pointer hover:text-hoverColor transition-all duration-300"
+            to="/FeaturedProperties"
+            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
           >
-            Featured
+            Features
           </Link>
-
           <Link
-            to="/"
-            className="cursor-pointer hover:text-hoverColor transition-all duration-300"
+            to="/NewsLetter"
+            className="cursor-pointer hover:text-blue-500 transition-all duration-300"
           >
             Contact
           </Link>
-          <div className=" lg:hidden">
+          <div className="md:hidden">
             <button
               onClick={openForm}
-              className="bg-[#13be41] text-white px-4 py-2 rounded-md hover:bg-hoverColor transition ease-out duration-300"
+              className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-500 transition ease-out duration-300"
             >
               Send message
             </button>

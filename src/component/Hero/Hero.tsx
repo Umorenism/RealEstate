@@ -1,12 +1,6 @@
 import { AiOutlineSearch } from "react-icons/ai";
 
 export const Hero = () => {
-  // const [type, setType] = useState(0);
-  // const [continent, setContinent] = useState(0);
-  // const [priceRange, setPriceRange] = useState(0);
-
-  // const handleChange = () => {};
-
   return (
     <div className="w-full h-screen bg-img p-4">
       <div className="max-w-full flex-1 m-auto h-full flex flex-col items-center justify-center  w-full ">

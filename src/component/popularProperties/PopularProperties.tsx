@@ -1,80 +1,47 @@
-// import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import img1 from "../../../src/asset/house3.png";
 import img2 from "../../../src/asset/house4.png";
 import img3 from "../../../src/asset/house5.png";
 
-export const PopularProperties = () => {
-  // const [numberOfProperties, setNumberOfProperties] = useState({});
+// Define the property types and their details
+const propertyTypes = [
+  { type: "beach", label: "Beach Properties", image: img1 },
+  { type: "mountain", label: "Mountain Properties", image: img2 },
+  { type: "village", label: "Village Properties", image: img3 },
+];
 
-  // useEffect(() => {
-  //   const fetchNumberOfProperties = async () => {
-  //     try {
-  //       // const data = await request('/property/find/types' 'GET') coming from utli
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-  //   fetchNumberOfProperties();
-  // }, []);
+export const PopularProperties = () => {
   return (
-    <div className="min-h-screen max-w-[100%] w-full mt-5">
-      <div className="max-w-[1100px] p-4 min-h-[400px] m-auto flex  flex-col">
+    <div className="min-h-screen max-w-full w-full mt-5">
+      <div className="max-w-6xl p-4 min-h-[400px] m-auto flex flex-col">
         <div className="flex items-center flex-col gap-5">
-          <h5 className="text-[#777] text-xl">Different Types of Properties</h5>
-          <h2 className="text-[#333] font-bold text-3xl">
-            Best types of proerty in Uyo
+          <h5 className="text-gray-500 text-xl">
+            Different Types of Properties
+          </h5>
+          <h2 className="text-gray-900 font-bold text-3xl">
+            Best Types of Property in Uyo
           </h2>
         </div>
         <div className="flex flex-col md:flex-row relative mt-4 gap-5 p-4">
-          <Link
-            to={`/properties?type=beach$continent=1$priceRange=2`}
-            className=" shadow-2xl  p-4 relative w-full md:w-[30%] "
-          >
-            <img
-              src={img1}
-              className="relative rounded-2xl w-full h-[400px] shadow-md object-cover"
-            />
-            {/* <div>{numberOfProperties?.beach}</div> */}
-            <div className="absolute text-white p-2 bg-[#0303ce] bottom-[6rem] rounded-xl px-2 left-[2rem]">
-              beach
-            </div>
-            <h5 className="ml-2 mt-4 text-[#333] text-center font-bold text-xl">
-              Beach properties
-            </h5>
-          </Link>
-          <Link
-            to={`/properties?type=mountain$continent=1$priceRange=2`}
-            className="shadow-2xl p-4 relative w-full md:w-[30%]"
-          >
-            <img
-              src={img2}
-              className="relative rounded-2xl w-full h-[400px] shadow-md  object-cover"
-            />
-            {/* <div>//{numberOfProperties?.mountain}//</div> */}
-            <div className="absolute text-white p-2 bg-[#0303ce] bottom-[6rem] rounded-xl px-2 left-[2rem]">
-              mountain
-            </div>
-            <h5 className="ml-2 mt-4 text-[#333] text-center font-bold text-xl">
-              Mountain properties
-            </h5>
-          </Link>
-          <Link
-            to={`/properties?type=village$continent=1$priceRange=2`}
-            className="shadow-2xl p-4 relative w-full md:w-[30%]"
-          >
-            <img
-              src={img3}
-              className="relative rounded-2xl w-full h-[400px] shadow-md  object-cover"
-            />
-            {/* <div>{numberOfProperties.Village}</div> */}
-            <div className="absolute text-white p-2 bg-[#0303ce] bottom-[6rem] rounded-xl px-2 left-[2rem]">
-              villiage
-            </div>
-            <h5 className="ml-2 mt-4 text-[#333] text-center font-bold text-xl">
-              Village properties
-            </h5>
-          </Link>
+          {propertyTypes.map((property) => (
+            <Link
+              key={property.type}
+              to={`/properties?type=${property.type}&continent=1&priceRange=2`}
+              className="shadow-lg p-4 relative w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src={property.image}
+                className="relative rounded-2xl w-full h-[400px] shadow-md object-cover transition-transform duration-300 hover:scale-105"
+                alt={`${property.label}`}
+              />
+              <div className="absolute text-white p-2 bg-blue-800 bottom-20 rounded-xl px-2 left-4">
+                {property.type}
+              </div>
+              <h5 className="ml-2 mt-4 text-gray-900 text-center font-bold text-xl">
+                {property.label}
+              </h5>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
