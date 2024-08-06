@@ -2,28 +2,28 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 export const Hero = () => {
   return (
-    <div className="w-full h-screen bg-img p-4">
-      <div className="max-w-full flex-1 m-auto h-full flex flex-col items-center justify-center  w-full ">
-        {/* <div className=" border-2"> */}
-        <h1 className="text-black font-bold mb-2 text-3xl">
+    <div className="w-full h-screen bg-img p-4 relative">
+      <div className="absolute inset-0 bg-black opacity-50 backdrop-blur-md"></div>
+      <div className="relative z-10 max-w-full flex-1 m-auto h-full flex flex-col items-center justify-center w-full">
+        <h1 className="text-white font-bold mb-4 md:text-3xl  ">
           Let find your dream place right now
         </h1>
-        <p className="text-black font-bold mb-2">
-          Search the best selectioon of luxury real estate..
+        <p className="text-white text-sm font-semibold mb-2">
+          Search the best selection of luxury real estate..
         </p>
-        <div className="md:w-[50%] border-1 border-orange-500  p-4 rounded-xl flex justify-between items-center bg-white py-2  flex-col m-2 md:flex-row">
+        <div className="md:w-[50%] border-1 border-orange-500 p-4 rounded-xl flex justify-between items-center bg-white py-2 flex-col m-2 md:flex-row">
           <select
             // onChange={(e: any) => setType(e.target.value)}
-            className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
+            className="h-[40px] min-w-[160px] max-w-[200px] border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select types</option>
             <option value="beach">Town</option>
             <option value="mountain">City</option>
-            <option value="villiage">Village</option>
+            <option value="village">Village</option>
           </select>
           <select
             // onChange={(e: any) => setPriceRange(e.target.value)}
-            className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full  p-2 text-white m-2"
+            className="h-[40px] min-w-[160px] max-w-[200px] border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled className="pr-2">
               Select price Range
@@ -36,7 +36,7 @@ export const Hero = () => {
           </select>
           <select
             // onChange={(e: any) => setContinent(e.target.value)}
-            className="h-[40px] min-w-[160px] max-w-[200px]  border-none bg-blue-500 rounded-full p-2 text-white m-2"
+            className="h-[40px] min-w-[160px] max-w-[200px] border-none bg-blue-500 rounded-full p-2 text-white m-2"
           >
             <option disabled>Select Continents</option>
             <option value="0">Ik</option>
@@ -46,8 +46,7 @@ export const Hero = () => {
             <option value="4">Ini</option>
           </select>
           <button>
-            {" "}
-            <AiOutlineSearch className="p-1 w-[40px] h-[40px] rounded-lg " />
+            <AiOutlineSearch className="p-1 w-[40px] h-[40px] rounded-lg" />
           </button>
         </div>
       </div>
