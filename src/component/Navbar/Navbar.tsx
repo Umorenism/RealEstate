@@ -22,10 +22,10 @@ export const Navbar = () => {
 
   return (
     <div className="sticky top-0 w-full z-10 bg-white border-b-2 border-gray-300">
-      <div className="flex justify-between m-auto max-w-[1100px] items-center h-16 md:h-20 lg:h-24">
+      <div className="flex justify-between m-auto max-w-[1300px] items-center h-16 md:h-20 lg:h-24">
         <Link
           to="/"
-          className="flex gap-1 items-center text-blue-600 text-xl md:text-2xl lg:text-3xl"
+          className="flex mr-4 items-center text-blue-600 text-xl md:text-2xl lg:text-3xl"
         >
           <img
             src={logo}
@@ -48,6 +48,10 @@ export const Navbar = () => {
             <Link to="/newsletter">
               <li className="hover:text-blue-500">Newletter</li>
             </Link>
+            <Link to="/properties">
+              <li className="hover:text-blue-500">Properties</li>
+            </Link>
+
             <Link to="/fashion">
               <li className="hover:text-blue-500 underline text-orange-500">
                 Fashion
@@ -91,10 +95,18 @@ export const Navbar = () => {
               <li className="hover:text-blue-500 py-4">Popular Properties</li>
             </Link>
             <Link to="/featured">
-              <li className="hover:text-blue-500 py-4">Fatured</li>
+              <li className="hover:text-blue-500 py-4">Feattured</li>
             </Link>
             <Link to="/newsletter">
               <li className="hover:text-blue-500 py-4">Newletter</li>
+            </Link>
+            <Link to="/properties">
+              <li className="hover:text-blue-500 py-4">Property</li>
+            </Link>
+            <Link to="/fashion">
+              <li className="hover:text-blue-500 underline text-orange-500">
+                Fashion
+              </li>
             </Link>
           </ul>
           <div className="md:hidden">
